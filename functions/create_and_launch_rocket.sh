@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function launch_rocket(){
     rocket-start-power $1
     rocket-internal-power $1
