@@ -1,8 +1,8 @@
 #!/bin/bash
 
 function read_numbers(){
-    read -pr "Enter Number1: " num1
-    read -pr "Enter Number2: " num2
+    read -p "Enter Number1: " num1
+    read -p "Enter Number2: " num2
     return $(( "$num1 $1 $num2" ))
 }
 
@@ -14,7 +14,7 @@ do
   echo "4. Divide"
   echo "5. Quit"
 
-  read -pr "Enter your choice: " choice
+  read -p "Enter your choice: " choice
 
   case $choice in
     1)  read_numbers +
@@ -41,8 +41,8 @@ done
 #!/bin/bash
 
 function read_numbers(){
-  read -pr "Enter Number1: " number1
-  read -pr "Enter Number2: " number2
+  read -p "Enter Number1: " number1
+  read -p "Enter Number2: " number2
 }
 
 while true
@@ -53,7 +53,7 @@ do
   echo "4. Divide"
   echo "5. Quit"
 
-  read -pr "Enter your choice: " choice
+  read -p "Enter your choice: " choice
 
   case $choice in
     1)  read_numbers
